@@ -119,7 +119,7 @@ class SiteController extends Controller
     public function actionView($id)
     {
         
-        $article = Article::findOne($id);
+        $article = Article::find()->where(['id' => $id])->one();
         
         $article->viewedCounter();
 

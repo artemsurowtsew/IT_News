@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 // Отримуємо статтю з бази даних
-$article = Article::find()->one(); // Можна адаптувати для передачі ID
+Article::find()->one(); // Можна адаптувати для передачі ID
 if (!$article) {
     echo '<p>No article found.</p>';
     return;
@@ -16,7 +16,7 @@ if (!$article) {
 
     <div class="post-thumb">
 
-        <a href="blog.html"><img src="" alt=" image "></a>
+    <a href="/web/2/web/uploads/grok.png"><img src="<?= Yii::$app->urlManager->baseUrl . '/uploads/' . $article->image ?>" alt="image"></a>
 
     </div>
 
@@ -30,14 +30,12 @@ if (!$article) {
 
             </h6>
 
-            <h1 class="entry-title"><a href="blog.html"> Home is peaceful place </a></h1>
+            <h1 class="entry-title"><a href="blog.html"><?= Html::encode($article->title) ?></a></h1>
 
         </header>
 
         <div class="entry-content">
-
-            Text.
-
+        <?= Html::encode($article->description) ?>
         </div>
 
         <div class="decoration">
@@ -255,7 +253,7 @@ if (!$article) {
 
                         <?php \yii\widgets\ActiveForm::end() ?>
 
-                    </div><!--end leave comment-->
+                    </div>
 
                 <?php endif; ?>
 

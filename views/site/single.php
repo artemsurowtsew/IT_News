@@ -46,7 +46,9 @@ if (!$article) {
 
         <div class="social-share">
 
-            <span class="social-share-title pull-left text-capitalize">By Stas On 20-02-12</span>
+        <span class="social-share-title pull-left text-capitalize">
+    By <?= Html::encode($article->user->name) ?> On <?= Yii::$app->formatter->asDate($article->date) ?>
+</span>
 
             <ul class="text-center pull-right">
 

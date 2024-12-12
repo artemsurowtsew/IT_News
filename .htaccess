@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteEngine on
+
+# Забезпечує коректний доступ до папки web
+RewriteCond %{REQUEST_URI} !^/(web)
+
+RewriteRule ^assets/(.*)$ /web/2/web/assets/$1 [L]
+RewriteRule ^css/(.*)$ /web/2/web/css/$1 [L]
+RewriteRule ^js/(.*)$ /web/2/web/js/$1 [L]
+RewriteRule ^img/(.*)$ /web/2/web/img/$1 [L]
+
+# Перенаправляє всі інші запити на index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php

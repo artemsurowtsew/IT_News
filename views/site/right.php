@@ -12,7 +12,7 @@ use yii\helpers\Url;
     <ul class="list-group">
         <?php foreach ($popular as $popArticle): ?>
             <li class="list-group-item">
-                <?= Html::a(Html::encode($popArticle->title), ['article/view', 'id' => $popArticle->id], ['class' => 'text-decoration-none']) ?>
+                <?= Html::a(Html::encode($popArticle->title), ['view', 'id' => $popArticle->id], ['class' => 'text-decoration-none']) ?>
             </li>
         <?php endforeach; ?>
     </ul>

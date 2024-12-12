@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <article class="post mb-4">
                     <div class="card">
                         <!-- Зображення статті -->
-                        <a href="<?= Url::to(['article/view', 'id' => $article->id]) ?>">
+                        <a href="<?= Url::to(['view', 'id' => $article->id]) ?>">
                             <img src="<?= $article->getImage() ?>" class="card-img-top img-index" alt="<?= Html::encode($article->title) ?>">
                         </a>
 
@@ -36,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <!-- Заголовок статті -->
                             <h5 class="card-title">
-                                <?= Html::a(Html::encode($article->title), ['article/view', 'id' => $article->id], ['class' => 'text-dark text-decoration-none']) ?>
+                                <?= Html::a(Html::encode($article->title), ['view', 'id' => $article->id], ['class' => 'text-dark text-decoration-none']) ?>
                             </h5>
 
                             <!-- Опис статті -->
@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             <!-- Кнопка для продовження читання -->
                             <div class="d-grid gap-2">
-                                <?= Html::a('Читати далі', ['article/view', 'id' => $article->id], ['class' => 'btn btn-primary']) ?>
+                                <?= Html::a('Читати далі', ['view', 'id' => $article->id], ['class' => 'btn btn-primary']) ?>
                             </div>
 
                             <!-- Інформація про автора та дату -->

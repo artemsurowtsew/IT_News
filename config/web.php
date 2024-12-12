@@ -60,7 +60,7 @@ $config = [
                 'user/<controller:\w+>/<action:\w+>' => 'user/<controller>/<action>',
                 'user/index' => 'user/default/index',
                 'signup' => 'auth/signup',
-                'article/<id:\d+>' => 'article/view',
+                'view<id:\d+>' => '/view?id=',
                 'login' => 'auth/login',
                 'topic/<id:\d+>' => 'topic/view',
                 '<action>' => 'site/<action>',

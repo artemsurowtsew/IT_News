@@ -18,7 +18,7 @@ use yii\widgets\LinkPager;
 
                     <div class="post-thumb">
 
-                        <a href="<?= Url::toRoute(['/view', 'id'=>$article->id]) ?>">
+                        <a href="<?= Url::toRoute(['view', 'id'=>$article->id]) ?>">
 <img class="img-topic" src="<?= $article->getImage() ?>" alt="" class="pull-left"></a>
 
                     </div>
@@ -34,7 +34,7 @@ use yii\widgets\LinkPager;
                             <h6><a href="<?= Url::toRoute(['/topic', 'id'=>$article->topic->id]) ?>"> 
 <?= $article->topic->name; ?></a></h6>
 
-                            <h1 class="entry-title"><a href="<?= Url::toRoute(['/view', 'id'=>$article->id]) ?>">
+                            <h1 class="entry-title"><a href="<?= Url::toRoute(['view?id=', 'id'=>$article->id]) ?>">
 <?= $article->title; ?></a></h1>
 
                         </header>

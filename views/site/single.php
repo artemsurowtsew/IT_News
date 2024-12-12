@@ -26,7 +26,7 @@ if (!$article) {
 
             <h6>
 
-                <a href=""> Travel </a>
+                <a href=""></a><?= Html::encode($article->date) ?></a>
 
             </h6>
 
@@ -40,7 +40,7 @@ if (!$article) {
 
         <div class="decoration">
 
-            <a href="" class="btn btn-default">Tag</a>
+            <a href="" class="btn btn-default">Теги: </a><?= Html::encode($article->tag ) ?></a>
 
         </div>
 

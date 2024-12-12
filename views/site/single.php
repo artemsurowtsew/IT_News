@@ -14,11 +14,11 @@ if (!$article) {
 
 <article class="post">
 
-    <div class="post-thumb">
-
-    <a href="/web/2/web/uploads/grok.png"><img src="<?= Yii::$app->urlManager->baseUrl . '/uploads/' . $article->image ?>" alt="image"></a>
-
-    </div>
+<div class="post-thumb">
+    <a href="#">
+        <img src="<?= Yii::$app->urlManager->baseUrl . '/uploads/' . $article->image ?>" alt="image">
+    </a>
+</div>
 
     <div class="post-content">
 

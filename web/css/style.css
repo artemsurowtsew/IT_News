@@ -27,7 +27,8 @@ a {
     overflow: hidden;
 }
 .post-thumb img {
-    width: 100%;
+    max-width: 100%; 
+    height: auto;
 }
 .post-thumb {
     position: relative;
@@ -44,6 +45,8 @@ a {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: 300px;
+    
 }
 .post-list .post-content {
 

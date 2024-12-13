@@ -54,6 +54,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                
                 'admin/index' => 'admin/default/index',
                 'admin/<controller>/<action>' => 'admin/<controller>/<action>', // Додаткові маршрути для адмін-контролерів 
                  // Користувацькі маршрути

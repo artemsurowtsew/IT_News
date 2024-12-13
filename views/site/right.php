@@ -24,7 +24,7 @@ use yii\helpers\Url;
     <ul class="list-group">
         <?php foreach ($recent as $recArticle): ?>
             <li class="list-group-item">
-                <?= Html::a(Html::encode($recArticle->title), ['article/view', 'id' => $recArticle->id], ['class' => 'text-decoration-none']) ?>
+                <?= Html::a(Html::encode($recArticle->title), ['/view', 'id' => $recArticle->id], ['class' => 'text-decoration-none']) ?>
             </li>
         <?php endforeach; ?>
     </ul>

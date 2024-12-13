@@ -23,34 +23,26 @@ a {
     display: inline-block;
 }
 .post-content {
-    padding: 0 43px;
+    padding: 0 23px;
     overflow: hidden;
 }
+
 .post-thumb img {
-    max-width: 100%; 
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
 }
+
+
 .post-thumb {
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 300px;
-    
+    -ms-flex-direction: column ;
+    flex-direction: column ;
 }
+
 .post-list .post-content {
 
-    padding: 0 20px 0 0;
+    padding: 0 10px 0 0;
 
     overflow: hidden;
 

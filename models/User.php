@@ -5,7 +5,6 @@ namespace app\models;
 use Yii;
 use yii\web\IdentityInterface;
 use yii\base\NotSupportedException;
-
 /**
  * This is the model class for table "user".
  *
@@ -25,7 +24,6 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
      * Віртуальна властивість для пароля
      */
     public $password;
-
     /**
      * {@inheritdoc}
      */

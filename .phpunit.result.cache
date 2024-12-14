@@ -1,0 +1,1 @@
+{"version":1,"defects":{"tests\\unit\\MyTest::testValidLogin":7,"tests\\unit\\MyTest::testInvalidLogin":8},"times":{"tests\\unit\\MyTest::testValidLogin":0.446,"tests\\unit\\MyTest::testInvalidLogin":0.002,"tests\\unit\\MyTest::testEmptyCredentials":0.001,"tests\\unit\\SignupFormTest::testSuccessfulSignup":0.424,"tests\\unit\\SignupFormTest::testSignupValidationFails":0.002}}

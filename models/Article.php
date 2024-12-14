@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 
+
 /**
  * This is the model class for table "article".
  *
@@ -30,7 +31,6 @@ class Article extends \yii\db\ActiveRecord
     {
         return 'article';
     }
-
     /**
      * {@inheritdoc}
      */
@@ -56,7 +56,6 @@ class Article extends \yii\db\ActiveRecord
         
         ];
     }
-
     /**
      * {@inheritdoc}
      */

@@ -5,7 +5,6 @@ namespace app\models;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Article;
-
 /**
  * ArticleSearch represents the model behind the search form of `app\models\Article`.
  */
@@ -21,7 +20,6 @@ class ArticleSearch extends Article
             [['title', 'description', 'date', 'image', 'tag'], 'safe'],
         ];
     }
-
     /**
      * {@inheritdoc}
      */
@@ -30,7 +28,6 @@ class ArticleSearch extends Article
         // bypass scenarios() implementation in the parent class
         return Model::scenarios();
     }
-
     /**
      * Creates data provider instance with search query applied
      *
@@ -43,7 +40,6 @@ class ArticleSearch extends Article
         $query = Article::find()->with(['user', 'topic']);
 
         // add conditions that should always apply here
-
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);

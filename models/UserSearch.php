@@ -15,7 +15,6 @@ class UserSearch extends Model
     public $name;
     public $login;
     public $image;
-
     /**
      * {@inheritdoc}
      */
@@ -26,7 +25,6 @@ class UserSearch extends Model
             [['name', 'login', 'image'], 'safe'],
         ];
     }
-
     /**
      * {@inheritdoc}
      */

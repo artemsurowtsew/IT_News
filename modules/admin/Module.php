@@ -4,7 +4,6 @@ namespace app\modules\admin;
 
 use Yii;
 use yii\filters\AccessControl;
-
 class Module extends \yii\base\Module
 {
     public $controllerNamespace = 'app\modules\admin\controllers';
